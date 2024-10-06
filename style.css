@@ -1,20 +1,20 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(250, 218, 234), rgb(244, 134, 189));
 }
 
-button {
-  font-size: 7px;
-}
 
 #main-content {
+  margin-top: 180px;
+  margin-right: 35px;
+  margin-left: 19px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -27,6 +27,36 @@ button {
   box-shadow: 2px 5px 5px #333;
 }
 
+#create-task-form {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#description {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#priority {
+  .high { color: red;}
+  .medium { color: yellow; }
+  .low { color: green;}
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(249, 131, 190);
+  font-weight: 600;
+  border-radius: 100px;
+}
+
+#tasks {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  list-style: lower-roman;
+  user-select: none;
+}
+
 #list {
   margin: 10px;
   border: 1px solid #333;
@@ -34,4 +64,8 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+
+#list h2{
+  text-align: center;
 }
