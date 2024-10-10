@@ -10,8 +10,7 @@ body {
   background: linear-gradient(rgb(250, 218, 234), rgb(244, 134, 189));
 }
 
-
-#main-content {
+.container {
   margin-top: 180px;
   margin-right: 35px;
   margin-left: 19px;
@@ -27,45 +26,45 @@ body {
   box-shadow: 2px 5px 5px #333;
 }
 
-#create-task-form {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-#description {
+#inputField {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   border-radius: 10px;
+  width: 300px;
+  height: 46px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 25px;
+  vertical-align: middle;
+  text-align: center;
 }
 
-#priority {
-  .high { color: red;}
-  .medium { color: yellow; }
-  .low { color: green;}
+#addToDo {
+  font-size: 20px;
+  border-radius: 10px;
+  height: 46px;
+  width: 50px;
+  outline: none;
+  border: 1px solid black;
+}
+
+#important {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(249, 131, 190);
   font-weight: 600;
   border-radius: 100px;
-}
-
-#tasks {
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 5px;
-  list-style: lower-roman;
-  user-select: none;
-}
-
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
-}
-
-#list h2{
+  height: 35px;
   text-align: center;
+}
+
+.to-dos {
+  margin-top: 35px;
+}
+
+/* I am going to use this on my Java Script to help the user to edit their tasks*/
+.paragraph-styling {
+  margin: 0;
+  cursor: pointer;
+  font-size: 25px;
 }

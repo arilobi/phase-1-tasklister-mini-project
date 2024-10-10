@@ -1,37 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Task Lister</title>
 </head>
 <body>
-  <div id="main-content">
-    <h1>T a s k - L i s t</h1>
+    
+    <div class = "container">
+      <!-- Heading of my task lister -->
+      <h1>To Do List</h1>
+      <p>________________________________</p>
+      <br>
+      <br>
+        <input id="inputField" type="text" placeholder="description">
+        <br>
+      
+        <!-- Creating a button -->
+        <button id="addToDo">+</button>
+        <br>
 
-    <form id="create-task-form" action="#" method="POST">
-      <label for="new-task-description">Task:</label>
-      <input type="text" id="description" name="description" placeholder="New task?">
-      <select id="priority">
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
-      </select>
-      <button onclick=createnewtask() id="tasks" value="Create New Task">Create New Task</button>
-    </form>
+        <!-- Giving my user a option to choose the priority of his tasks whether high, Medium or low -->
+        <div class="priority">
+          <select id="important">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+        </div>
 
-    <div id="list">
-      <h2>My Todos:</h2>
-      <ul id="tasks">
-       <li>Buy bread</li>
-       <li>Check on grandma</li>
-       <li>Go to town</li>
-      </ul>
+        <!-- Where the to-do lists will be placed after inputing in the inputField section -->
+        <div class="to-dos" id="toDoContainer">
+        </div>
     </div>
 
+
+        <!-- The link to my Java Script -->
     <script src="./src/index.js"></script>
-  </div>
-    
-</section>
+
 </body>
 </html>
