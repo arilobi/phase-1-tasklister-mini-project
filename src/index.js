@@ -24,8 +24,7 @@ addToDoButton.addEventListener('click', (event) => {
   } )
 })
 
-// The prevent default will prevent the submit button which is the "+" in my html from submitting. I'm not entirely sure what this actually does... 
-// ... but I just put it here cause I was told to do it. Lol!
+// The prevent default will prevent the submit button which is the "+" in my html from submitting...
 document.getElementById("container").addEventListener("addToDo", event => {
   event.preventDefault();
 })
